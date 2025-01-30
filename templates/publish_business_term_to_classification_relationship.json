@@ -1,0 +1,15 @@
+{
+   "items":[
+      {
+         "elementType":"RELATIONSHIP",
+         "fromIdentity":"{id:BusinessTerm}",
+         "toIdentity":"{id:Classification}",
+         "operation":"INSERT",
+         "type":"com.infa.ccgf.models.governance.asscGlossaryClassification",
+         "identityType":"INTERNAL",
+         "attributes":{
+            
+         }
+      }
+   ]
+}

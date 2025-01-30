@@ -1,0 +1,90 @@
+##########################################################################################################
+## Publish API Example
+##########################################################################################################
+Request URL: https://cdgc-api.dmp-us.informaticacloud.com/ccgf-contentv2/api/v1/publish
+Request Method: POST
+Status Code: 207 Multi-Status
+Remote Address: 52.43.34.35:443
+Referrer Policy: strict-origin-when-cross-origin
+access-control-allow-credentials: true
+access-control-allow-origin: https://cdgc.dmp-us.informaticacloud.com
+content-security-policy: default-src 'self'; font-src https: data: 'self'; img-src https: data: 'self'; script-src https: 'unsafe-eval' 'unsafe-inline' 'self'; style-src https: 'unsafe-inline' 'self'; frame-ancestors 'self'; frame-src https: 'self'; object-src 'none'; connect-src https:
+content-type: application/json
+date: Thu, 30 Jan 2025 17:43:06 GMT
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-envoy-upstream-service-time: 2056
+x-frame-options: SAMEORIGIN
+x-infa-server-agent: ccgf-contentv2-6-4-0-790-7d746c494d-87lpj
+x-xss-protection: 1; mode=block
+:authority: cdgc-api.dmp-us.informaticacloud.com
+:method: POST
+:path: /ccgf-contentv2/api/v1/publish
+:scheme: https
+accept: application/json
+accept-encoding: gzip, deflate, br, zstd
+accept-language: en-US,en;q=0.9
+authorization: Bearer eyJraWQiOiI0RU9FYmJaTEtXQ2V6RXpTZk5WUUtDIiwidHlwIjoiSldUIiwiYWxnIjoiRVMyNTYifQ.eyJ1bmlxdWVfaWQiOiIkMmEkMDckT0VRY3JFN1JLaHYxcXNLZ3hocmI1dVAzVVBCQVNPb3NFbFIyMTJjdmdzWWc5NnVWbmFXd3kiLCJ1c2VyX2ZuYW1lIjoiU2NvdHQiLCJ1c2VyX25hbWUiOiJzaGF5ZXNfY29tcGFzcyIsImlzcyI6Imh0dHBzOi8vZG1wLXVzLmluZm9ybWF0aWNhY2xvdWQuY29tL2lkZW50aXR5LXNlcnZpY2UiLCJub25jZSI6IlJqVXZYd1B4NmNFODU4byIsInVzZXJfbG5hbWUiOiJIYXllcyIsImNsaWVudF9pZCI6ImNkbGdfYXBwIiwiYXVkIjoiY2RsZyIsInVzZXJfb3JnX2lkIjoiYzVQeTdONGtmU0FraEs3dW81c2w2dSIsInVzZXJfaWQiOiIxZk1DeWY1aGZrZmx2c0VybVRUQ2FnIiwib3JnX2lkIjoiYzVQeTdONGtmU0FraEs3dW81c2w2dSIsImV4cCI6MTczODI2MDY3OSwib3JnX25hbWUiOiJOQURHU0EgSGF5ZXMgQ29tcGFzcyIsImlhdCI6MTczODI1ODg3OSwianRpIjoiMVJtdzIybVRUUE9kbzJhUG1NSFFtMiJ9.LM7_tGkKXddmm8F_PS5bB02AJw9wqyjQWFFikV9o842fLtTOx075Rfg4LTJFBw43pGz6BdJRC8F3Ak2-pYOpVQ
+content-length: 279
+content-type: application/json
+cookie: USER_SESSION=70JeQuC2jSohyCtmM5mVG0; XSRF_TOKEN=7px5khV4OvKfdy29Cnnkgh
+correlation-id: 11d61aac-f892-4387-aada-8dc098c67824
+operation-id: 11d61aac-f892-4387-aada-8dc098c67824
+origin: https://cdgc.dmp-us.informaticacloud.com
+priority: u=1, i
+referer: https://cdgc.dmp-us.informaticacloud.com/
+sec-ch-ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-site
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+x-infa-org-id: c5Py7N4kfSAkhK7uo5sl6u
+x-infa-product-id: CDGC
+x-infa-tg-id: 7fed42dd-da0b-4cef-bf02-11ca737c671f
+x-infa-tid: 11d61aac-f892-4387-aada-8dc098c67824
+x_infa_log_ctx: req_id=11d61aac-f892-4387-aada-8dc098c67824
+xsrf_token: 7px5khV4OvKfdy29Cnnkgh
+
+Payload:
+{
+   "items":[
+      {
+         "elementType":"RELATIONSHIP",
+         "fromIdentity":"32462e7d-dce2-4eac-866b-8b5b582c99c9",
+         "toIdentity":"a508cf47-e44f-4f35-b75c-d34a5c38152c",
+         "operation":"INSERT",
+         "type":"com.infa.ccgf.models.governance.asscGlossaryClassification",
+         "identityType":"INTERNAL",
+         "attributes":{
+            
+         }
+      }
+   ]
+}
+
+Response:
+{
+    "jobId": null,
+    "items": [
+        {
+            "type": null,
+            "association": "com.infa.ccgf.models.governance.asscGlossaryClassification",
+            "operation": "INSERT",
+            "statusCode": 201,
+            "messageCode": "CONTENT_SUCCESS",
+            "params": null,
+            "elementType": "RELATIONSHIP",
+            "identity": null,
+            "internalIdentity": null,
+            "provisionalIdentity": null,
+            "fromIdentity": "32462e7d-dce2-4eac-866b-8b5b582c99c9",
+            "toIdentity": "a508cf47-e44f-4f35-b75c-d34a5c38152c",
+            "attributes": null,
+            "validations": []
+        }
+    ],
+    "summary": null
+}
